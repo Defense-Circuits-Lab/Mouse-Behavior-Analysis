@@ -1,7 +1,7 @@
 # Behaviour
 Tools for easy extraction of basic behavioural readouts
 
-## Prepare_Tracking
+## PrepareTracking
 An interface-based contour tracking tool.  
 *Uses common image processing methods to retrieve mouse contour, center of
 gravity, as well as a motion measure (frame-to-frame change in surface).
@@ -11,7 +11,7 @@ Works for RGB and thermal movies.*
 ![image](https://github.com/user-attachments/assets/d465ea2c-ccc3-4ea2-a152-5a90626488ea)
 
 
-## Check_Freezing
+## CheckFreezing
 An interface-based "freezing"detection tool.  
 *Uses the motion measure output from Prepare_Tracking to extract immobility bouts via thresholding.
 The user can select a fitting threshold, choose a merging window (if two episodes are closer than x, they are merged), and a minimum duration value (episodes below the value are discarded).

@@ -1,5 +1,5 @@
-classdef PrepareTracking_v5<handle
-%% PrepareTracking_v5 - A GUI to perform mouse tracking.
+classdef PrepareTracking<handle
+%% PrepareTracking - A GUI to perform mouse tracking.
 %
 % Uses common image processing methods to retrieve mouse contour, center of
 % gravity, as well as a motion measure (global change in pixels) in an
@@ -42,7 +42,7 @@ classdef PrepareTracking_v5<handle
 %       - Test with different types of data (larger movie resolution might
 %       decrease the display performance)
 %
-%     Copyright (C) 2020 Jérémy Signoret-Genest, DefenseCircuitsLab
+%     Copyright (C) 2020 JÃ©rÃ©my Signoret-Genest, DefenseCircuitsLab
 %     Initial version: original code 2018, current form early 2019
 %     Current version: 25/07/2020     
 %
@@ -146,7 +146,7 @@ classdef PrepareTracking_v5<handle
     
 methods
      % Constructor
-        function obj = PrepareTracking_v5
+        function obj = PrepareTracking
             %% Parameters
                 % This system makes our lives easier when handling all the
                 % parameters at once (restoring, keeping in memory, saving),

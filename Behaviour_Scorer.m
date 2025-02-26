@@ -1,4 +1,4 @@
-classdef Behaviour_Scorer_v5<handle
+classdef Behaviour_Scorer<handle
     % Behaviour_Scorer - Class to detect/score several behaviours.
     % Initial detection is performed using a combination of contour
     % tracking and DeepLabCut tracking. For each behaviour, different
@@ -125,7 +125,7 @@ classdef Behaviour_Scorer_v5<handle
     
     methods
         % Constructor
-        function obj = Behaviour_Scorer_v5
+        function obj = Behaviour_Scorer
         %% Parameters used for detection
         % Can be changed until the best ones are found but then the same 
         % should be used for ALL the different files (or at least for the 

@@ -37,7 +37,7 @@ function CheckFreezing(InputFiles)
 %         have ridiculous FPS and resolution that are too heavy to handle
 %         like this)
 %
-%     Copyright (C) 2019 Jérémy Signoret-Genest, DefenseCircuitsLab
+%     Copyright (C) 2019 JÃ©rÃ©my Signoret-Genest, DefenseCircuitsLab
 %
 %     This program is free software: you can redistribute it and/or modify
 %     it under the terms of the GNU General Public License as published by
@@ -53,9 +53,14 @@ function CheckFreezing(InputFiles)
 %     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 if nargin == 0,
-
-    Experimenters = DataBase.Lists.GetList('Experimenters');
-    IndxExpe = strcmpi(Experimenters(:,2),getenv('username'));
+    % Internal use
+    if 0
+        Experimenters = DataBase.Lists.GetList('Experimenters');
+        IndxExpe = strcmpi(Experimenters(:,2),getenv('username'));
+    else
+        Experimenters = {''};
+        IndxExpe = false;
+    end
 
     % File input or folder input?
     Answer = questdlg('What do you want to process?','Please choose...','Single file','Folder','Single file');

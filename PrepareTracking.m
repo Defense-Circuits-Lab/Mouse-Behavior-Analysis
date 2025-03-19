@@ -1837,7 +1837,7 @@ methods(Hidden)
                  TrueMask = true([CurrObj.Movie.Height CurrObj.Movie.Width]);
                  while CurrObj.Movie.hasFrame,
                      FrameCount = FrameCount + 1;
-                     Times(FrameCount) = CurrObj.CurrentTime;
+                     Times(FrameCount) = CurrObj.Movie.CurrentTime;
                      [closeBW,CC] = obj.ProcessFrame('Process');
                      if ~isnan(closeBW),
                          MaskContour{1} = MaskContour{2};
